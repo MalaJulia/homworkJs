@@ -1,0 +1,9 @@
+.product-title {
+    color:red;
+    font-family: cursive;
+}
+.product-image {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
