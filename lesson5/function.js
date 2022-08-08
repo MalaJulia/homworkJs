@@ -37,7 +37,7 @@ function text (h) {
     document.write(`<h3>${h}</h3>`)
 }
 
-console.log(text('okten'))
+console.log(text ('okten'))
 
 // - створити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 function textLi (h) {
@@ -88,13 +88,33 @@ function docArray(arr){
     document.write(`<div>${arr[i].id} ${arr[i].name} ${arr[i].age}</div>`)
 }
 docArray(ar2)
-// - створити функцію яка повертає найменьше число з масиву
-let num = [303,2,9,5];
-function minNum (n)  {
 
+
+// - створити функцію яка повертає найменьше число з масиву
+let num = [303,2,1,5];
+function minNum (array){
+    let min = array[0]
+    for (const item of array) {
+        if (min > item) {
+            min = item
+        }
+    }
+    return min
 }
+
 console.log(minNum(num))
 
+
 // - створити функцію яка приймає масив чисел, сумує значення елементів масиву та повертає його. Приклад [1,2,10]->13
-// let num = [303,5,9,1];
-// function suma
+
+let num1 = [303,5,9,1];
+
+function sumaNum (array2) {
+    let suma = array2[0]
+    for (let i = 1; i < array2.length; i++) {
+        suma += array2[i]
+    }
+    return suma
+}
+
+console.log(sumaNum(num1))
